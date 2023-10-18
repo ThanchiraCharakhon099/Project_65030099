@@ -5,9 +5,18 @@ namespace TestProject1
     public class UnitTest1
     {
         [TestMethod]
-        public void TestMethod1()
+        public void TestProjectMemberCount()
         {
             Assert.IsTrue(Enum.GetNames(typeof(Project.Members)).Length == 4);
+            
+        }
+        [TestMethod]
+        public void TestProjectMemberIds()
+        {
+            Assert.IsTrue((int)Project.Members.Cream == 1);
+            Assert.IsTrue((int)Project.Members.Aim == 2);
+            Assert.IsTrue((int)Project.Members.Ohm == 3);
+            Assert.IsTrue((int)Project.Members.Pare == 4);
         }
     }
 }
