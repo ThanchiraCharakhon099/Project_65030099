@@ -14,6 +14,7 @@ namespace Project_65030099
             Cream = 1,
             Aim = 2,
             Ohm = 3,
+            Pare = 4
         }
             
     }
